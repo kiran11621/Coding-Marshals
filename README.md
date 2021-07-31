@@ -44,6 +44,9 @@
 <br/>:black_small_square:&nbsp;Features like Writing Blogs, Contact us, User Authentication, Update User details are provided.
 <br/>:black_small_square:&nbsp;We can create groups consisting of number of participants and can take part in the contest as a team.
 </p>
+
+<img align="right" height="240px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/8202c8b51ff6ccedc86a3175ac6d7b4e6943bdf9/outcomes.png" />
+
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
 - :space_invader:
