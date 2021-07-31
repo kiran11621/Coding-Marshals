@@ -77,6 +77,30 @@ Clone the Project -
   git clone https://github.com/kiran11621/Coding-Marshals.git
 ```
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/harsh-vish14/express-server.git
+```
+
+Go to the project directory
+
+```bash
+  cd express-server
+```
+
+Install dependencies
+
+```bash
+  npm install
+
+  OR
+
+  npm i
+```
+
 <p>
   
 
