@@ -8,10 +8,13 @@
 - A platform where we can create and organize Coding Competition within few minutes, giving users features to clone, create and use questions which are already available at the platform, no need of prior permission, no need for grants or no such formalities, can control who can take part in the contest.
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
-<br/><br/><br/><br/>
+<br/><br/>
+<h3>Features - </h3>
+<p>
+:black_small_square:The User can create and conduct a contest with just 4 Simple Steps.
+![image](https://user-images.githubusercontent.com/67108565/127741865-279aad2a-7708-473d-996a-4f6c209eb1e8.png)
 
-:black_small_square:
-
+</p>
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
 - :space_invader:
