@@ -3,15 +3,12 @@
 
 <img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/f7eae4a6f91b9f5c42626714bc1d6c04212cb9b6/introduction.png" />
 
-<h3>Online Judges</h3>
+<h3>Our Motive</h3>
 
-- a platform where we can create and organize coding competition within few minutes, giving users features to clone, create and use questions which are already available at the platform, no need of prior permission, no need for grants or no such formalities, can control who can take part in the contest.
+- A platform where we can create and organize Coding Competition within few minutes, giving users features to clone, create and use questions which are already available at the platform, no need of prior permission, no need for grants or no such formalities, can control who can take part in the contest.
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
-![image](https://user-images.githubusercontent.com/67108565/127741488-10a338f9-0b72-45d0-a46a-dd95e0f06761.png)
 
-![image](https://user-images.githubusercontent.com/67108565/127741397-4f830804-04e3-41d2-8ef0-31b472631f56.png)
-
-<br/>
+:black_small_square:
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
