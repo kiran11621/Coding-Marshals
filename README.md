@@ -9,7 +9,7 @@
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
 <br/><br/>
-<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
+<img align="left" height="270px" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
 <h3>Features - </h3>
 <p>
 :black_small_square:&nbsp;The User can create and conduct a contest with just 4 Simple Steps.
