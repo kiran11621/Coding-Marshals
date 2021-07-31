@@ -9,7 +9,7 @@
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
 <br/><br/>
-<img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
+<img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/a3ab58427442da8cbf78126741e4fb254a7abaf3/how%20will%20it%20work%20(4).png" />
 
 <h3>Problem Statement - </h3>
 <img align="left" height="320px" width="30%"; alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problem%20statement1.png?raw=true"/>
