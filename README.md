@@ -12,7 +12,7 @@
 <img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
 
 <h3>Problem Statement - </h3>
-<img align="left" height="270px" alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problem%20statement1.png?raw=true"/>
+<img align="left" height="420px" width="30%"; alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problem%20statement1.png?raw=true"/>
 <br><Br>
 :one:&nbsp; Considering CodeChef we have to get in touch with them 1-2 weeks in advance.
 <br/>:two:&nbsp; The problem should be algorithmic in nature.
@@ -23,6 +23,11 @@
 <br/>:eight:&nbsp; ……….
 <br/>:nine:&nbsp; .
 <br/>:keycap_ten:&nbsp; .
+
+<img align="right" height="420px" width="20%"; alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problemstatement2%20(2).png?raw=true"/>
+  To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.{: .gitlab-orange}To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
+![image](https://user-images.githubusercontent.com/67108565/127742684-31bb1257-2038-43ef-95e2-e44f4af2b23b.png)
+
 
 <h3>Features - </h3>
 <p>
