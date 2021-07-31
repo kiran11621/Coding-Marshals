@@ -26,7 +26,7 @@
 
 <br/>
 
-<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/6dc82329b678cd222580240e3a64a7bff641aa26/problemstatement2%20(2).png" />
+<img align="right" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/6dc82329b678cd222580240e3a64a7bff641aa26/problemstatement2%20(2).png" />
 To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.{: .gitlab-orange}
 To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
 
