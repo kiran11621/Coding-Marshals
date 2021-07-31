@@ -71,7 +71,14 @@
 
 <br/>
 
+<h3>How to Use?</h3>
+Clone the Project - 
+```bash
+  git clone https://github.com/kiran11621/Coding-Marshals.git
+```
+
 <p>
+  
 
 ## 📝 Recent Projects
 ### [ Using Dating Profiles to Predict Occupation: ](https://github.com/DataOnATangent/Representative_Profiles_Machine_Learning_Project)<br>
