@@ -25,9 +25,8 @@
 <br/>:keycap_ten:&nbsp; .
 
 <img align="right" height="420px" width="20%"; alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problemstatement2%20(2).png?raw=true"/>
-  To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.{: .gitlab-orange}To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
-![image](https://user-images.githubusercontent.com/67108565/127742684-31bb1257-2038-43ef-95e2-e44f4af2b23b.png)
-
+To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.{: .gitlab-orange}
+To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
 
 <h3>Features - </h3>
 <p>
