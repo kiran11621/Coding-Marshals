@@ -48,12 +48,14 @@
 <h3>Outcomes - </h3>
 <img align="center" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/8202c8b51ff6ccedc86a3175ac6d7b4e6943bdf9/outcomes.png" />
 
-<h3> 🛠 &nbsp;Tech Stack</h3>
+<h3> 🛠 &nbsp;Technology Used - </h3>
 
 - FrontEnd
   ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
   ![POSTGRESQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) 
-  ![MSExcel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) 
+  ![MSExcel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+  ![Bootstrap](https://user-images.githubusercontent.com/67108565/127743237-4cf452b5-f01b-41dc-be9b-c1e8d1445210.png)
+ 
 - BackEnd
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
