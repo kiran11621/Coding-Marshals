@@ -59,13 +59,13 @@
 <code><img height="40" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height="40" width="60" src="https://user-images.githubusercontent.com/67108565/127743320-70c720f2-fb45-4a35-9d2b-8188faa68f6f.png"></code>
 - Database
-  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-  ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-  ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+<code><img height="40" width="60" src="https://user-images.githubusercontent.com/67108565/127743470-35da5ed6-6acb-48a9-88a4-b4f839435e60.png"></code>
 - Deployment
-  ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-  ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-
+<code><img height="40" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png"></code>
+<code><img height="40" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/github-api/github-api.png"></code>
+<code><img height="40" width="40" src="https://user-images.githubusercontent.com/67108565/127743545-e403ecab-53a8-4cb6-8088-5aca1d056477.png"></code>
+<code><img height="40" width="40" src="https://user-images.githubusercontent.com/67108565/127743531-0a7333e9-a5ee-4835-9d7b-874bb4c43191.png"></code>
+<code><img height="40" width="40" src="https://user-images.githubusercontent.com/67108565/127743511-29b4691f-3bf2-4266-bb4f-0d641da5b476.png"></code>
 
 <br/>
 
