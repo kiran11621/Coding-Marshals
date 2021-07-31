@@ -45,23 +45,24 @@
 <br/>:black_small_square:&nbsp;We can create groups consisting of number of participants and can take part in the contest as a team.
 </p>
 
+<h3>Outcomes - </h3>
 <img align="center" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/8202c8b51ff6ccedc86a3175ac6d7b4e6943bdf9/outcomes.png" />
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
-- :space_invader:
+- FrontEnd
   ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
   ![POSTGRESQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) 
   ![MSExcel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) 
-- 🌐 &nbsp;
+- BackEnd
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-- ⚙️ &nbsp;
+- Database
   ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
   ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
   ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-- 💻 &nbsp;
+- Deployment
   ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
   ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 
