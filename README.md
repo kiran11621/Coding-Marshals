@@ -12,8 +12,15 @@
 <h3>Features - </h3>
 <p>
 :black_small_square:The User can create and conduct a contest with just 4 Simple Steps.
-![image](https://user-images.githubusercontent.com/67108565/127741865-279aad2a-7708-473d-996a-4f6c209eb1e8.png)
-
+:black_small_square:You can control 'WHO CAN PARTICIPATE IN YOUR CONTEST?' isn't it amazing...?
+:black_small_square:Create Contest for Future, keep track of your Past Contest by Leaderboard also from your Profile and participate in Ongoing Contest.
+:black_small_square:You can select question using tags for adding questions related to certain topic or difficulty.
+:black_small_square:You will be redirected to leaderboard once the time for the contest is over.
+:black_small_square:You can submit your code in Three programming languages i.e., Cpp, Java and Python.
+:black_small_square:Website provides features to Admin for administrating the website such as User details view and delete, Question adding and deleting, viewing Contest organized.
+:black_small_square:User will be mailed after registering, creating contest (containing Passcode) and filling the contact form. 
+:black_small_square:Features like Writing Blogs, Contact us, User Authentication, Update User details are provided.
+:black_small_square:We can create groups consisting of number of participants and can take part in the contest as a team.
 </p>
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
