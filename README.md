@@ -9,7 +9,23 @@
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
 <br/><br/>
-<img align="left" height="470px" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
+<img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
+
+<h3>Problem Statement - </h3>
+<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/f7eae4a6f91b9f5c42626714bc1d6c04212cb9b6/introduction.png" />
+- Considering CodeChef we have to get in touch with them 1-2 weeks in advance.
+- The problem should be algorithmic in nature.
+- You need to create, upload and test your own problem statements. As, you are not allowed use their contest questions available.
+- Then you have to fill this application form.
+- Get verification and grant to upload your question.
+……….
+……….
+……….
+.
+.
+![image](https://user-images.githubusercontent.com/67108565/127742292-3680af43-979e-4207-b8f8-0b218cdcbe25.png)
+
+
 <h3>Features - </h3>
 <p>
 :black_small_square:&nbsp;The User can create and conduct a contest with just 4 Simple Steps.
