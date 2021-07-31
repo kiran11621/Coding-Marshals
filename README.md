@@ -71,29 +71,42 @@
 
 <br/>
 
+<h3>How to Download ?</h3>
 
 Clone the project
 
 ```bash
-  git clone https://github.com/harsh-vish14/express-server.git
+  git clone https://github.com/kiran11621/Coding-Marshals.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd express-server
+  cd 'coding marshals'
 ```
 
 Install dependencies
 
 ```bash
-  npm install
-
-  OR
-
-  npm i
+  pip install -r requirements.txt
+```
+```bash
+  pip install django
+```
+```bash
+  python manage.py makemigrations
+```
+```bash
+  python manage.py migrate
+```
+```bash
+  python manage.py runserver
 ```
 
+Start Server on Browser using
+```bash
+  http://127.0.0.1:8000/
+```
 <p>
   
 
