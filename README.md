@@ -12,19 +12,16 @@
 <img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
 
 <h3>Problem Statement - </h3>
-<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/f7eae4a6f91b9f5c42626714bc1d6c04212cb9b6/introduction.png" />
-- Considering CodeChef we have to get in touch with them 1-2 weeks in advance.
-- The problem should be algorithmic in nature.
-- You need to create, upload and test your own problem statements. As, you are not allowed use their contest questions available.
-- Then you have to fill this application form.
-- Get verification and grant to upload your question.
-……….
-……….
-……….
-.
-.
-![image](https://user-images.githubusercontent.com/67108565/127742292-3680af43-979e-4207-b8f8-0b218cdcbe25.png)
-
+<img align="left" height="270px" alt="https://github.com/kiran11621/Coding-Marshals/blob/e22535f28344fc6452f750e51c160b23dfdc21b8/problem%20statement1.png" />
+:one:&nbsp; Considering CodeChef we have to get in touch with them 1-2 weeks in advance.
+<br/>:two:&nbsp; The problem should be algorithmic in nature.
+<br/>:three:&nbsp; You need to create, upload and test your own problem statements. As, you are not allowed use their contest questions available.
+<br/>:four:&nbsp;  Then you have to fill this application form.
+<br/>:six:&nbsp;  Get verification and grant to upload your question.
+<br/>:seven:&nbsp; ……….
+<br/>:eight:&nbsp; ……….
+<br/>:nine:&nbsp; .
+<br/>:ten:&nbsp; .
 
 <h3>Features - </h3>
 <p>
