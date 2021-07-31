@@ -71,13 +71,6 @@
 
 <br/>
 
-<h3>How to Use?</h3>
-Clone the Project - 
-```bash
-  git clone https://github.com/kiran11621/Coding-Marshals.git
-```
-
-## Run Locally
 
 Clone the project
 
