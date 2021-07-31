@@ -6,7 +6,7 @@
 <h3>Online Judges</h3>
 
 - Online Judges like CodeChef, CodeForces, Leet Code and many other conduct their signature monthly coding competition which involves problem solving related to Data Structures  and Algorithms which spans for different duration of time. 
-With a motive to help coders to improve, apply their overall algorithmic knowledge and to compete against each other and make it big in the world of computer programming.
+- With a motive to help coders to improve, apply their overall algorithmic knowledge and to compete against each other and make it big in the world of computer programming.
 ![image](https://user-images.githubusercontent.com/67108565/127741397-4f830804-04e3-41d2-8ef0-31b472631f56.png)
 
 <br/>
