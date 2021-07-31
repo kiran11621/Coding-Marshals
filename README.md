@@ -13,6 +13,7 @@
 
 <h3>Problem Statement - </h3>
 <img align="left" height="270px" alt="problem statement1.png" src="https://github.com/kiran11621/Coding-Marshals/blob/main/problem%20statement1.png?raw=true"/>
+<br><Br>
 :one:&nbsp; Considering CodeChef we have to get in touch with them 1-2 weeks in advance.
 <br/>:two:&nbsp; The problem should be algorithmic in nature.
 <br/>:three:&nbsp; You need to create, upload and test your own problem statements. As, you are not allowed use their contest questions available.
