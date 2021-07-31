@@ -3,17 +3,11 @@
 
 <img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/f7eae4a6f91b9f5c42626714bc1d6c04212cb9b6/introduction.png" />
 
-<h3> :woman: &nbsp;About Me </h3>
+<h3>Online Judges</h3>
 
-- 😄 Pronouns: She/Her/Hers 
-- 🔭 I’m currently working on: an NLP sentiment analysis project
-- :heart: My favorite language: SQL
-- 🌱 I’m currently learning: nueral nets and Mandarin
-- 👯 I’m always looking to collaborate with: scientist from any field
-- 💬 Ask me about: anything, I am happy to help
-- 🌍 I support: Latinas in Tech, AllStar Code, The Foundation to Decrease Worldsuck
-- 💜 Interests: philosophy, travel, dachshunds, internet culture, video games, Star Trek
-- ⚡ Fun fact: My ultimate dream is to be on Star Trek and dawn a yellow uniform. 🖖
+- Online Judges like CodeChef, CodeForces, Leet Code and many other conduct their signature monthly coding competition which involves problem solving related to Data Structures  and Algorithms which spans for different duration of time. 
+With a motive to help coders to improve, apply their overall algorithmic knowledge and to compete against each other and make it big in the world of computer programming.
+![image](https://user-images.githubusercontent.com/67108565/127741397-4f830804-04e3-41d2-8ef0-31b472631f56.png)
 
 <br/>
 
