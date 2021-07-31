@@ -9,7 +9,7 @@
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
 <br/><br/>
-<h4>Project Link - </h4>[Coding Marshals](https://codingmarshals.herokuapp.com) ! 
+<h4>Project Link - </h4>Coding Marshals: https://codingmarshals.herokuapp.com 
 
 <h3>How will it work ? </h3>
 <img align="left" height="100%" width="100%" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/a3ab58427442da8cbf78126741e4fb254a7abaf3/how%20will%20it%20work%20(4).png" />
