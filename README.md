@@ -1,8 +1,7 @@
 # Coding-Marshals
-![Welcome Banner](banner.gif)
 
 
-<img align="left" height="270px" alt="hello_world" src="pic.png" />
+<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/f7eae4a6f91b9f5c42626714bc1d6c04212cb9b6/introduction.png" />
 
 <h3> :woman: &nbsp;About Me </h3>
 
