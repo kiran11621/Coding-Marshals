@@ -24,7 +24,7 @@
 <br/>:nine:&nbsp; .
 <br/>:keycap_ten:&nbsp; .
 
-<br/>
+<br/><br/>
 
 <img align="right" height="240px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/6dc82329b678cd222580240e3a64a7bff641aa26/problemstatement2%20(2).png" />
 :round_pushpin:&nbsp;To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
