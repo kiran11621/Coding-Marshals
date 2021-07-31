@@ -109,11 +109,3 @@ Start Server on Browser using
 ```bash
   http://127.0.0.1:8000/
 ```
-
-<h3> 🤝🏻 &nbsp;Connect with Me </h3> 
-
-<p align="center">
-<br>
-<a href="https://www.linkedin.com/in/kiran-maharana-332938182/" alt="LinkedIn" /></a>&nbsp;
-<a href="mailto:kiran11621@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>&nbsp;
-</p>
