@@ -30,6 +30,7 @@
   # text in gray
   <div class="text-white bg-blue mb-2">
   .text-white on .bg-blue
+    fdasfhsajkfhjlkahlfjklashlfjkhfaj
 </div>
 :round_pushpin:&nbsp;To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
 </br>:round_pushpin:&nbsp;So, there is a need to have a platform where we can create and organize coding competition within few minutes, giving users features to clone, create and use questions which are already available at the platform, no need of prior permission, no need for grants or no such formalities, can control who can take part in the contest.
