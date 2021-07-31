@@ -56,8 +56,8 @@
 <code><img height="40" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="40" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png"></code>
 - BackEnd
-<code><img height="40" width="40" src="https://user-images.githubusercontent.com/67108565/127743320-70c720f2-fb45-4a35-9d2b-8188faa68f6f.png"></code>
-
+<code><img height="40" width="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+<code><img height="40" width="60" src="https://user-images.githubusercontent.com/67108565/127743320-70c720f2-fb45-4a35-9d2b-8188faa68f6f.png"></code>
 - Database
   ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
   ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
