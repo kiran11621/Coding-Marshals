@@ -9,6 +9,7 @@
 - Just with few simple steps create and compete in coding competition with your friends and frenemies. 
 
 <br/><br/>
+<img align="left" height="270px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/cd56529081f261c69fc2aac694ea7496b047ba9c/how%20will%20it%20work.png" />
 <h3>Features - </h3>
 <p>
 :black_small_square:&nbsp;The User can create and conduct a contest with just 4 Simple Steps.
@@ -18,7 +19,7 @@
 <br/>:black_small_square:&nbsp;You will be redirected to leaderboard once the time for the contest is over.
 <br/>:black_small_square:&nbsp;You can submit your code in Three programming languages i.e., Cpp, Java and Python.
 <br/>:black_small_square:&nbsp;Website provides features to Admin for administrating the website such as User details view and delete, Question adding and deleting, viewing Contest organized.
-:black_small_square:User will be mailed after registering, creating contest (containing Passcode) and filling the contact form. 
+<br/>:black_small_square:&nbsp;User will be mailed after registering, creating contest (containing Passcode) and filling the contact form. 
 <br/>:black_small_square:&nbsp;Features like Writing Blogs, Contact us, User Authentication, Update User details are provided.
 <br/>:black_small_square:&nbsp;We can create groups consisting of number of participants and can take part in the contest as a team.
 </p>
