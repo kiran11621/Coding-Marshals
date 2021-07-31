@@ -11,9 +11,9 @@
 <br/><br/>
 <h3>Features - </h3>
 <p>
-:black_small_square:The User can create and conduct a contest with just 4 Simple Steps.
-:black_small_square:You can control 'WHO CAN PARTICIPATE IN YOUR CONTEST?' isn't it amazing...?
-:black_small_square:Create Contest for Future, keep track of your Past Contest by Leaderboard also from your Profile and participate in Ongoing Contest.
+-:black_small_square:The User can create and conduct a contest with just 4 Simple Steps.
+-:black_small_square:You can control 'WHO CAN PARTICIPATE IN YOUR CONTEST?' isn't it amazing...?
+-:black_small_square:Create Contest for Future, keep track of your Past Contest by Leaderboard also from your Profile and participate in Ongoing Contest.
 :black_small_square:You can select question using tags for adding questions related to certain topic or difficulty.
 :black_small_square:You will be redirected to leaderboard once the time for the contest is over.
 :black_small_square:You can submit your code in Three programming languages i.e., Cpp, Java and Python.
