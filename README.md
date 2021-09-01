@@ -30,7 +30,7 @@
 <br/><br/>
 
 <img align="right" height="240px" alt="hello_world" src="https://github.com/kiran11621/Coding-Marshals/blob/6dc82329b678cd222580240e3a64a7bff641aa26/problemstatement2%20(2).png" />
-<br/><br/>
+<br/>
 :round_pushpin:&nbsp;To reduce and make this process less complicated, more user-friendly and minimize the number of steps. Also, there is no platform available where you can create and organize a coding contest within a few minutes and  control who can take part in your contest.
 </br>:round_pushpin:&nbsp;So, there is a need to have a platform where we can create and organize coding competition within few minutes, giving users features to clone, create and use questions which are already available at the platform, no need of prior permission, no need for grants or no such formalities, can control who can take part in the contest.
 </br>:round_pushpin:&nbsp;Just with few simple steps create and compete in coding competition with your friends and frenemies. 
