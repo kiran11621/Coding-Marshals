@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Solution</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <style>
+      textarea {
+        background: url(http://i.imgur.com/2cOaJ.png);
+        background-attachment: local;
+        background-repeat: no-repeat;
+        padding-left: 35px;
+        padding-top: 10px;
+        border-color: #ccc;
+      }
+    </style>
+  </head>
+  <body style="background-color: #fff5cc">
+    <section>{% include 'users_contest_display/contest_navbar.html' %}</section>
+    <section>
+      {% include 'users_contest_display/contest_navbar_top.html' %}
+    </section>
+    <section style="margin-left: 12%; margin-top: 140px">
+      <form method="POST">
+        {% csrf_token %}
+        <div>
+          <select
+            class="form-select form-select-sm"
+            name="language"
+            aria-label=".form-select-sm example"
+            style="
+              padding: 10px 20px;
+              border: none;
+              border-radius: 25px;
+              background-color: #ffcc00;
+            "
+          >
+            <option selected><b>Select Language</b></option>
+            <option value="cpp">CPP</option>
+            <option value="java">Java</option>
+            <option value="py">Python</option>
+          </select>
+        </div>
+        <br />
+        <textarea
+          spellcheck="false"
+          name="code"
+          rows="40"
+          cols="200"
+          style="50%; background-color: white;"
+          placeholder="Paste Your Code Here"
+        ></textarea>
+
+        <br />
+        <br />
+        <button
+          type="submit"
+          style="
+            padding: 10px 50px;
+            background-color: #ffcc00;
+            border-radius: 25px;
+            border: none;
+          "
+        >
+          Submit
+        </button>
+
+        <br />
+        {% if res %}
+        <p
+          style="
+            background-color: Yellow;
+            font-size: 20px;
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            margin-left: 250px;
+          "
+        ></p>
+        {% else %} {% if result %}
+        <p
+          style="
+            background-color: Green;
+            font-size: 20px;
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            margin-left: 250px;
+          "
+        >
+          Accepted
+        </p>
+        {% else %}
+        <p
+          style="
+            background-color: Red;
+            font-size: 20px;
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            margin-left: 250px;
+          "
+        >
+          Wrong Answer
+        </p>
+        {% endif%} {% endif%}
+      </form>
+    </section>
+  </body>
+</html>

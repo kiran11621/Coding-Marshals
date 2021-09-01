@@ -1,0 +1,84 @@
+/* Navigation Bar */
+.navbar{
+  padding: 10px 10px 10px 10px;
+  background-color:	#181818;
+  transition: all ease 0.4s;
+}
+.navbar-brand{
+  font-size: 30px;
+  color: white !important;
+}
+.navbar .navbar-nav li a{
+  font-size: 18px;
+  color: white;
+  font-family: Times New Roman;
+}
+
+
+
+/* hover effect on nav */
+nav li a:hover {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    opacity: 0.5;
+}
+.btn-grad {background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%)}
+         .btn-grad {
+            margin: 6px;
+            padding: 8px 45px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            border-radius: 10px;
+            display: block;
+           color: white;
+           font-family: Times new Roman;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+.button {
+  box-shadow: 0 0 10px #eee;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 9px 49px;
+  width: 210px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 11px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+

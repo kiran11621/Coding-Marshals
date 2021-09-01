@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+   <link rel="stylesheet" href="{% static 'css/navbar.css'%}">
+       <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top hover-nav" style="background-color: black;">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <a href="#" class="navbar-brand" style="font-size: 25px;"><b>Code Marshals</b></a>
+  </div>
+  <div class="collapse navbar-collapse" id="resNav">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{% url 'indexlogin' %}" style="color: white;">Home</a></li>&nbsp;&nbsp;&nbsp;
+
+        <li><button class="button" style="vertical-align:middle" onclick="document.location='{% url 'create_contest' %}'"><span>Create Contest</span></button></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="{% url 'runningcontest' %}" style="color: white;">Contest</a></li>
+      <li><a href="{% url 'display_blogs' %}" style="color: white;">Blogs</a></li>&nbsp;&nbsp;&nbsp;
+      <li><a href="{% url 'about' %}" style="color: white;">About Us</a></li>&nbsp;&nbsp;&nbsp;
+      <li><a href="{% url 'contact' %}" style="color: white;">Contact Us</a></li>
+      <li><button type="button" class="btn-grad" onclick="document.location='{% url 'logout' %}'">Logout</button></li>&nbsp;&nbsp;&nbsp;&nbsp;
+      <li style="color: white;"><a style="padding-top: 0px; color: white; padding-bottom: 0px;" href="/users/user_profile/{{pk}}" >Hello, {{request.user}}&nbsp;&nbsp;<img src="{{user.userinfo.profile_pic.url}}"  alt="ooo" height="50px"; width="50px";/></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+    </ul>
+  </div>
+</nav>  <!-- End of Navigation Bar -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

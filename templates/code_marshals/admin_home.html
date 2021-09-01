@@ -1,0 +1,55 @@
+{% block content %} {% load widget_tweaks %}x {%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Marshals</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+  </head>
+  <body style="background-color: #d6e6ff; overflow-x: hidden">
+    {% include 'code_marshals/admin_navbar.html' %}
+    <br /><br /><br />
+    <section style="margin-left: 300px">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="blood">
+                <i class="fas fa-user"></i>
+              </div>
+              <br />
+              <div>Total Number of Users: {{total_user}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="blood">
+                <i class="fas fa-cube"></i>
+              </div>
+              <br />
+              <div>Total Number of Contest: {{total_contest_organized}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="blood">
+                <i class="fab fa-quora"></i>
+              </div>
+              <br />
+              <div>Total Number of Questions: {{total_questions}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+{% endblock content %}

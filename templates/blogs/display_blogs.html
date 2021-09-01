@@ -1,0 +1,251 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #041a2f;
+        font-family: Montserrat, sans-serif;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        margin: 0;
+      }
+
+      h3 {
+        margin: 10px 0;
+      }
+
+      h6 {
+        margin: 5px 0;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .card-container {
+        background-color: #231e39;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+        color: #b3b8cd;
+        padding-top: 30px;
+        position: relative;
+        width: 350px;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .card-container .pro {
+        color: #231e39;
+        background-color: #febb0b;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+
+      .card-container .round {
+        border: 1px solid #03bfcb;
+        border-radius: 50%;
+        padding: 7px;
+      }
+
+      button.primary {
+        background-color: #03bfcb;
+        border: 1px solid #03bfcb;
+        border-radius: 3px;
+        color: #231e39;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        padding: 10px 25px;
+      }
+
+      button.primary.ghost {
+        background-color: transparent;
+        color: #02899c;
+      }
+
+      .skills {
+        background-color: #1f1a36;
+        text-align: left;
+        padding: 15px;
+        margin-top: 30px;
+      }
+
+      .skills ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .skills ul li {
+        border: 1px solid #2d2747;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 7px 7px 0;
+        padding: 7px;
+      }
+
+      footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+      }
+
+      footer p {
+        margin: 10px 0;
+      }
+
+      footer i {
+        color: red;
+      }
+
+      footer a {
+        color: #3c97bf;
+        text-decoration: none;
+      }
+
+      textarea[name="FurnishingDetails"] {
+        height: 2em;
+      }
+    </style>
+  </head>
+  <body style="background-image: url('{% static 'images/blogs2.jpg' %}')">
+    <div
+      class="navbar"
+      style="padding: 5px; background-color: transparent; overflow: hidden"
+    >
+      <a href="{% url 'indexlogin' %}" style="color: black"
+        ><b>Code Marshals</b></a
+      >
+      <div style="float: right">
+        <a href="{% url 'indexlogin' %}" style="color: black"><b>Home</b></a>
+        <a href="{% url 'create_blog' %}" style="color: black"
+          ><button style="padding: 10px; border-radius: 25px">
+            <b>Create Blog</b>
+          </button></a
+        >
+        <a href="{% url 'about' %}" style="color: black"><b>About Us</b></a>
+        <a href="{% url 'contact' %}" style="color: black"><b>Contact Us</b></a>
+        <a href="{% url 'logout' %}" style="color: black"><b>Logout</b></a>
+        <div></div>
+      </div>
+    </div>
+
+    <section style="margin-top: 100px; margin-left: 30%; margin-right: 37%">
+      {% for i in blogs %}
+      <div class="card-container" style="width: 1200px">
+        <img
+          class="round"
+          src="/media/{{i.profile_pic}}"
+          height="100px;"
+          width="100px;"
+          alt="user"
+          style="float: left; margin-left: 100px"
+        />
+        <h3 style="margin-left: 10px">{{i.blogger_fullname}}</h3>
+        <h6>Creator Username: {{i.blogger_username}}</h6>
+        <p>From - {{i.college}}, {{i.city}}, {{i.country}}</p>
+        <div class="skills">
+          <h1 style="text-align: center">{{i.blog_name}}</h1>
+          <tr>
+            <td style="">
+              <textarea
+                rows="15"
+                readonly
+                class="myClass"
+                id="FurnishingDetails"
+                onkeydown="expandtext(this);"
+                style="
+                  margin-left: 05%;
+                  maring-right: 20px;
+                  border: none;
+                  font-family: Times New Roman;
+                  background-color: #1f1a36;
+                  text-align: justified;
+                  padding: 10px;
+                  color: white;
+                  font-family: Times New Roman;
+                  border: none;
+                  width: 90%;
+                  resize: none;
+                "
+              >
+{{i.content}}</textarea
+              >
+            </td>
+          </tr>
+        </div>
+        <h5>{{i.date}}</h5>
+        <br />
+      </div>
+      <br /><br /><br />
+      {%endfor%}
+    </section>
+
+    <footer
+      style="
+        background-color: #3e3a45;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+      "
+    >
+      <p
+        style="
+          color: white;
+          padding-bottom: 80px;
+          font-size: 20px;
+          text-align: center;
+        "
+      >
+        &copy; 2021: Kiran Maharana & Surajit Mondal
+      </p>
+    </footer>
+
+    <script>
+      $("#FurnishingDetails").text(
+        "hello\nhello1\nhello2\nhello3\nhello4\nhello5"
+      );
+      String.prototype.lines = function () {
+        return $("#FurnishingDetails").text().split(/\r*\n/);
+      };
+      String.prototype.lineCount = function () {
+        return $("#FurnishingDetails").text().lines().length;
+      };
+      alert($("#FurnishingDetails").text().lineCount());
+      $("#FurnishingDetails").css(
+        "height",
+        $("#FurnishingDetails").text().lineCount() + 1 + "em"
+      );
+    </script>
+  </body>
+</html>

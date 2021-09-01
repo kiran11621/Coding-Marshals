@@ -1,0 +1,131 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/information.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
+</head>
+<body>
+<div class="navbar">
+        <a href="{% url 'indexlogin' %}"><b>Code Marshals</b></a>
+        <div style="float: right;">
+            <a href="{% url 'indexlogin' %}">Home</a>
+            <a href="{% url 'logout' %}">Logout</a>
+            <div>
+            </div>
+        </div>
+    </div>
+<section style="margin: 150px;">
+    <hr>
+        <h1 style="text-align: center; color: white; font-size: 50px;">How to Make Contest?</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline">
+                    <div href="#" class="timeline-content">
+                        <div class="timeline-year">&nbsp;&nbsp;&nbsp;1</div>
+                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                        <h3 class="title">Create Contest</h3>
+                        <p class="description">
+                            Go to Create Contest. Fill the Form. Give Correct Username of the Contest Creator (The Username should be Verified i.e. use the same as Registered), Date and Time for organizing the Contest. As, once the form is submitted the details can't be modify/change by User.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div href="#" class="timeline-content">
+                        <div class="timeline-year">2&nbsp;&nbsp;&nbsp;</div>
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="title">Add Question</h3>
+                        <p class="description">
+                            You have Two Choices:
+                            <p>1. Add Question from already prepared Question list provided by Code Marshals</p>
+                            <p>2. Else, Prepare your own Question</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div href="#" class="timeline-content">
+                        <div class="timeline-year">&nbsp;&nbsp;&nbsp;3</div>
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="title">Question View</h3>
+                        <p class="description">
+                            You will get the view of all the questions added to the contest.
+                            <p><b>Note: </b>You will be not allowed to make any changes after you click submit. So, make sure you are sure with your choices.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div href="#" class="timeline-content">
+                        <div class="timeline-year">4&nbsp;&nbsp;&nbsp;</div>
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="title">Share Passcode</h3>
+                        <p class="description">
+                            After creating a Contest you will get a mail from CodeMarshals176@gmail.com. Having details for Contest and Passcode. You can share the Passcode with your Friends and ask them to join the Contest through Ongoing Contest List. You can control who can take part in the Contest. It's Amazing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section style="margin: 150px;">
+    <hr>
+    <h1 style="text-align: center; color: white; font-size: 50px;">How to Make Questions?</h1>
+    <hr>
+    <ul class="tilesWrap">
+	<li>
+		<h2>01</h2>
+		<h3>Question Information</h3>
+        <br>
+		<p>
+			Give a proper meaningful Question Name, give a valid Author Username i.e. registered (Author Username is same as User's Username) and provide your problem statement of your question.
+		</p>
+	</li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<li>
+		<h2>02</h2>
+		<h3>Input, Output, Tags and Constraints</h3>
+        <br>
+		<p>
+            Give Proper information about Input Format and Output Format so no ambiguity arise at User's side during solving. Provide valid Constraints and Tags. As, Tags can be used for Question filtering.
+		</p>
+        
+	</li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+	<li>
+    
+		<h2>03</h2>
+		<h3>Hidden Input and Hidden Output</h3>
+        <br>
+		<p>
+			Hidden Input and Hidden Output is to be provided in '.txt' file. The content of these file will not be displayed to user during contest. It increases the competitiveness of the Question.
+		</p>
+	</li>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<li>
+		<h2>04</h2>
+		<h3>Submit</h3>
+        <br>
+		<p>
+			You have two choices:
+            <p>1. Submit and Create Another.</p>
+            <p>2. Else, Submit and Go to Question List where you can search for your Question and add to the Contest.</p>
+		</p>
+	</li>
+</ul>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+{% load widget_tweaks %}
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ongoing Contest | Contest List</title>
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+    </script>
+
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{% static 'css_contest/contest_landing_page.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body style="overflow-x: hidden; background-color:#e1f2fa;">
+<section>
+    {% include 'users_contest_display/contest_navbar.html' %}
+</section>
+<section>
+    {% include 'users_contest_display/contest_navbar_top.html' %}
+</section>
+<section style="margin-top: 120px;">
+    <div class="fancy amp" style="font-size: 50px; text-transform: uppercase; font-family: Times New Roman;"><span><b>{{cname}}</b></span></div>
+    <p style="color: black; text-align: center; margin-left: 200px; margin-right: 200px; font-family: Times New Roman, Times, serif;">{{description}}</p>
+    <br><br>
+    <nav aria-label="breadcrumb" style="border-top: 0; margin-left: 170px; margin-right: 120px;">
+      <ol class="breadcrumb" style="background-color: #041a2f;">
+        <li class="breadcrumb-item active" aria-current="page" style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: white;">Problem Set >></a></li>
+      </ol>
+    </nav>
+    <!--display table content-->
+    <div class="row" style="margin-left: 59px;">
+      <div class="column" style="width: 75%; padding-left: 20px;">
+        <div class="container" style=" margin-top: 50px; width: 100%;">
+        <h3 style="text-align: center;">Problem Set</h3>
+            <table style="background-color: #d7ebf9" class="table table-light table-hover table-bordered table-striped">
+            <thead class="bg-info">
+                <tr style="background-color: #007acc; text-align: center; ">
+                    <th></th>
+                    <th scope="col">Sr. No.</th>
+                    <th scope="col">Problem Name</th>
+                    <th scope="col">Successful Submission</th>
+                    <th scope="col">Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in question.all %}
+                <tr>
+                    <td class="highlight"><div></div></td>
+                    <td>{{ forloop.counter }}</td>
+                    <td><a href="/users_contest_display/particular_question/{{current_user}}/{{cname}}/{{pk}}/{{i.problem_name}}" style="color: #000066;">{{ i.problem_name }}</a></td>
+                    <td><a href="#">{{ countques|get_item:i.problem_name }}</a></td>
+                    <td><a href="#">{{ qlist|get_item:i.problem_name }}</a></td>
+                    <td class="highlight"><div></div></td>
+                    {% endfor %}
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+          <div class="row" style="margin: 50px 100px; margin-top: 100px;">
+              <div class="col">
+          <div class="card text-white mb-3" style="max-width: 22rem;  border-radius: 25px;">
+                <div class="card-header" style="background-color: #007acc; text-align: center; border-radius: 25px 25px 0px 0px;"><h5><b>RULES</b></h5></div>
+              <div class="card-body" style="color: black;">
+                <p class="card-text">{{rules}}</p>
+              </div>
+            </div>
+              </div>
+               <div class="col">
+            <div class="card text-white mb-3" style="max-width: 22rem;  border-radius: 25px;">
+                <div class="card-header" style="background-color: #007acc; text-align: center; border-radius: 25px 25px 0px 0px;"><h5><b>PRIZES</b></h5></div>
+              <div class="card-body" style="color: black;">
+                <p class="card-text">{{prizes}}</p>
+              </div>
+            </div>
+               </div>
+               <div class="col">
+            <div class="card text-white mb-3" style="max-width: 22rem;  border-radius: 25px;">
+                <div class="card-header" style="background-color: #007acc; text-align: center; border-radius: 25px 25px 0px 0px;"><h5><b>INFORMATION</b></h5></div>
+              <div class="card-body" style="color: black;">
+                <p class="card-text"><b>Contest Organizer:</b> {{username}}</p>
+                <p class="card-text"><b>Date of Organization:</b> {{date}}</p>
+                <p class="card-text"><b>Starting Time:</b> {{start}}</p>
+                <p class="card-text"><b>Ending Time:</b> {{end}}</p>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="column" style="width: 25%; margin-top: 20px;">
+          <div class="row" style="margin-top: 70px;">
+
+          <div class="card text-white mb-3" style="width: 22rem;  border-radius: 25px;">
+              <div class="card-header" style="background-color: #007acc; text-align: center; border-radius: 25px 25px 0px 0px; padding: 5px;"><h4><b>TIME REMAINING</b></h4></div>
+              <div class="card-body" style="color: black; background-color: white; padding: 5px; border-radius: 0 0 25px 25px;">
+                <p class="card-text" style="text-align: center; ">
+                   <ul type="none" style="display:flex;  list-style:none; text-align: center; font-size: 20px;">
+                  <li></li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><li id="days"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                   <b> <li id="hours"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                   <b> <li id="mins"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                  <b><li id="secs"></li></b>
+                   </ul>
+                    <h2 id="end"></h2>
+
+                </p>
+            </div>
+          </div>
+              <div>
+              <br><br>
+              <div class="card text-white mb-3" style="width: 22rem;  border-radius: 25px;">
+<button type="button" class="btn btn-outline-info" style="button:hover:background-color: #007acc" onclick="document.location='/users_contest_display/leaderboard/{{cname}}/{{current_user}}'">LEADERBOARD</button>
+              </div>
+              </div>
+          <div class="container mb-3" style=" margin-left: 0px; width: 22rem;  border-radius: 25px;">
+              <br><BR>
+            <div class="leaderboard" style="border-radius: 25px 25px 0 0;">
+                <div class="head">
+                    <i class="fa fa-fort-awesome" style="font-size:36px"></i>
+                    <h1>Leaderboard</h1>
+                </div>
+                <div class="body">
+                    <ol>
+                        {% for i in board %}
+                        <li>
+                            <mark>{{ i.uname }}</mark>
+                            <small>{{ i.final_points }}</small>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
+          </div>
+      </div>
+    </div>
+</section>
+
+<script>
+
+
+function autoheight(element) {
+var el = document.getElementById(element);
+    el.style.height = "5px";
+    el.style.height = (el.scrollHeight)+"px";
+}
+
+    var t = "{{date}} {{formatedtime}}";
+    console.log(t);
+    // The data/time we want to countdown to
+    var countDownDate = new Date(t).getTime();
+
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    console.log(timeleft)
+    document.getElementById(timeleft)
+
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+    // Result is output to the specific element
+    document.getElementById("days").innerHTML = days + "d "
+    document.getElementById("hours").innerHTML = hours + "h "
+    document.getElementById("mins").innerHTML = minutes + "m "
+    document.getElementById("secs").innerHTML = seconds + "s "
+
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = ""
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+        window.location.href = '/users_contest_display/leaderboard/{{cname}}/{{current_user}}';
+        document.getElementById("timeleft").innerHTML=""
+    }
+    }, 1000);
+
+</script>
+</body>
+</html>

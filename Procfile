@@ -1,0 +1,1 @@
+web: gunicorn cp.wsgi

@@ -1,0 +1,208 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/users_signup.css '%}">
+	    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+</head>
+<body>
+    <div class="fullscreen-bg">
+      	<video
+        loop
+        muted
+        autoplay
+        poster="img/videoframe.jpg"
+        class="fullscreen-bg__video"
+      	>
+			<!--including video-->
+        	<source src="{% static 'video.mp4' %}" type="video/mp4" />
+      	</video>
+    </div>
+	<div style="margin: 30px;">
+<button class="btn" onclick="document.location='{% url 'index' %}'" style="border-radius: 50%; background-color: #FFB61E; height: 60px; width: 60px;"><i class="fa fa-home"></i></button>
+	</div>
+
+    <section>
+
+		<br><br><br><br><br>
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign Up</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form method="POST" enctype='multipart/form-data'>
+
+					{% csrf_token %}
+
+                    <div class="input-group form-group ">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.first_name|attr:'required:true' class="form-control" placeholder="First Name" %}
+						</div>
+					</div>
+					<br>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.last_name|attr:'required:true' class="form-control" placeholder="Last Name" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="far fa-envelope"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.email|attr:'required:true' class="form-control" placeholder="Email Id" %}
+						</div>
+					</div>
+					<br>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-users"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.username|attr:'required:true' class="form-control" placeholder="Username" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.password|attr:'required:true' class="form-control" placeholder="Password" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<div>
+							{% render_field userForm.password|attr:'required:true' class="form-control" placeholder="Confirm Password" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-genderless"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.gender|attr:'required:true' class="form-control" placeholder="Choose your Gender" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"=><i class="fas fa-calendar-alt"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.date_of_birth|attr:'required:true' class="form-control1" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-university"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.college|attr:'required:true' class="form-control" placeholder="College/University Name" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-globe-asia"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.country|attr:'required:true' class="form-control" placeholder="Country"  %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-city"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.city|attr:'required:true' class="form-control" placeholder="City" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-phone"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.mobile|attr:'required:true' class="form-control" placeholder="Mobile Number" %}
+						</div>
+					</div>
+					<br>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="far fa-image"></i></span>
+						</div>
+						<div>
+							{% render_field infoForm.profile_pic|attr:'required:true' class="form-control" %}
+						</div>
+					</div>
+                    <br>
+					<div class="input-group">
+						<input type="submit" value="Sign Up" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+            <br>
+<p style="color: white;">
+			{{userForm.errors}}</p>
+<p style="color: white;">			
+{{infoForm.errors}}
+
+</p>
+
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Already have an account?<a href={% url 'login'%}>Sign In</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="{% url 'reset_password' %}">Forgot your password?</a>
+				</div>
+			</div>
+
+			{% for message in messages %}
+          	<p class="messages" style="color: white;">{{message}}</p>
+          	{% endfor %}
+
+		</div>
+        </div>
+        </div>
+		<br><br><br>
+		<br><br><br>
+    </section>
+
+</body>
+</html>

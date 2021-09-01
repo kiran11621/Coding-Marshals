@@ -1,0 +1,109 @@
+{% load widget_tweaks %} {%load static%}
+
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="{% static 'css_contest/contest_navbar.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      hr {
+        background-color: gray;
+      }
+      nav {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area"></div>
+    <nav class="main-menu" style="position: fixed; height: 100%">
+      <ul>
+        <hr />
+        <li>
+          <a href="{% url 'indexlogin' %}">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text"> Home </span>
+          </a>
+        </li>
+        <hr />
+        <li class="has-subnav">
+          <a href="{% url 'create_contest' %}">
+            <i class="fa fa-laptop fa-2x"></i>
+            <span class="nav-text"> Create Contest </span>
+          </a>
+        </li>
+        <hr />
+        <li>
+          <a href="{% url 'runningcontest' %}">
+            <i class="fa fa-bar-chart-o fa-2x"></i>
+            <span class="nav-text"> Contest </span>
+          </a>
+        </li>
+        <hr />
+        <li class="has-subnav">
+          <a href="{% url 'display_blogs' %}">
+            <i class="fa fa-hive fa-2x"></i>
+            <span class="nav-text"> Blogs </span>
+          </a>
+        </li>
+        <hr />
+        <li>
+          <a href="{% url 'about' %}">
+            <i class="fa fa-info-circle fa-2x"></i>
+            <span class="nav-text"> About Us </span>
+          </a>
+        </li>
+        <hr />
+        <li>
+          <a href="{% url 'contact' %}">
+            <i class="fa fa-address-book fa-2x"></i>
+            <span class="nav-text"> Contact Us </span>
+          </a>
+        </li>
+        <hr />
+      </ul>
+      <ul class="logout">
+        <hr />
+        <li>
+          <a href="{% url 'logout' %}">
+            <i class="fa fa-user fa-2x"></i>
+            <span class="nav-text">
+              Hello, {{request.user}}&nbsp;&nbsp;<img
+                src="{{user.userinfo.profile_pic.url}}"
+                alt="ooo"
+                height="50px"
+                ;
+                width="50px"
+                ;
+              />
+            </span>
+          </a>
+        </li>
+        <hr />
+        <li>
+          <a href="{% url 'logout' %}">
+            <i class="fa fa-power-off fa-2x"></i>
+            <span class="nav-text"> Logout </span>
+          </a>
+        </li>
+        <hr />
+      </ul>
+    </nav>
+  </body>
+</html>

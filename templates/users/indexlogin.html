@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+
+    <title>Code Marshals | HomePage</title>
+    <link rel="stylesheet" href="{% static 'css/indexlogin.css'%}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#151515">
+
+    <title>Code Marshals</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+</head>
+
+<body>
+    {% include "users/navbar.html" %}
+
+
+    <div class="hero-image" style="background-image: url('{% static 'images/img1.gif' %}" height="100%" ; width="100%" ;>
+        <div class="hero-text" style="margin-top: 150px;">
+            <h1 class="ml9" style="font-size: 120px; text-shadow: 2px 4px #ff0000;">
+                <span class="text-wrapper">
+    <span class="letters">Code Marshals</span>
+                </span>
+            </h1>
+
+            <p style="font-size: 35px; text-shadow: 2px 1px orange;">Make it Right, Make it Work, Make it Fast, Make it Done</p>
+            <br><br><br>
+            <br><br><br> <button class="glow-on-hover" type="button" onclick="document.location='{% url 'display_blogs' %}'">BLOGS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="glow-on-hover" type="button" onclick="document.location='{% url 'create_contest' %}'">CREATE CONTEST</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="glow-on-hover" type="button" onclick="document.location='{% url 'contact' %}'">CONTACT US</button>
+
+        </div>
+    </div>
+
+    <section style="background-color: #050505;">
+        <div class="container">
+            <div class="box">
+                <div class="box-row">
+                    <div class="box-cell box1">
+                        <img src="{% static 'images/img2.gif' %}">
+                    </div>
+                    <div class="box-cell box2">
+                        Easy Interface to create contest. Go to Create contest follow the following four steps and you will be ready with your contest. Share the link with your Friends and Community. Check the leadership Board to find your Standing during ongoing contest. Feel
+                        free to give feedback and contact us for any technical help from contact us page.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <footer style="background-color: #3e3a45;  min-height: 8vh; ">
+        <p style="padding-top: 20px; color: white; padding-bottom: 20px; font-size: 20px; text-align: center;">&copy; 2021: Kiran Maharana & Surajit Mondal</p>
+    </footer>
+</body>
+<script src="{% static '/js/mainlogin1.js' %}" type="text/javascript"></script>
+
+</html>

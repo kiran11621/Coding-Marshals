@@ -1,0 +1,41 @@
+{% load widget_tweaks %} {%load static%}
+
+<link
+  rel="stylesheet"
+  href="{% static 'css_contest/contest_navbar_top.css' %}"
+/>
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+<body style="margin: 0px">
+  <section
+    class=""
+    style="margin-left: 550px; margin-top: -35px; overflow: hidden"
+  >
+    <ul class="menu cf" style="position: fixed">
+      <li>
+        <a
+          href="/users_contest_display/contest_landing_page/{{pk}}/{{cname}}/{{current_user}}"
+          >Problems</a
+        >
+      </li>
+      <li>
+        <a
+          href="/users_contest_display/submit/{{current_user}}/{{cname}}/{{pk}}/{{problem_name}}"
+          >Submit</a
+        >
+        <!--    <ul class="submenu">-->
+        <!--      <li><a href="">Problems</a></li>-->
+        <!--      <li><a href="">Submissions</a></li>-->
+        <!--      <li><a href="">Leaderboard</a></li>-->
+        <!--      <li><a href="">Code Editor</a></li>-->
+        <!--    </ul>-->
+      </li>
+      <li>
+        <a href="/users_contest_display/leaderboard/{{cname}}/{{current_user}}"
+          >Leaderboard</a
+        >
+      </li>
+      <li><a href="https://ide.geeksforgeeks.org/">Code Editor</a></li>
+      <li><a href="{% url 'contact' %}">Feedback</a></li>
+    </ul>
+  </section>
+</body>

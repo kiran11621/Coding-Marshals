@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Blogs</title>
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}" />
+</head>
+
+<body style="background-image: url('{% static 'images/blog1.jpg' %}')">
+  <div class="navbar">
+    <a href="{% url 'indexlogin' %}"><b>Code Marshals</b></a>
+    <div style="float: right">
+      <a href="{% url 'indexlogin' %}">Home</a>
+      <a href="{% url 'display_blogs' %}">Blogs</a>
+      <a href="{% url 'about' %}">About Us</a>
+      <a href="{% url 'contact' %}">Contact Us</a>
+      <a href="{% url 'logout' %}">Logout</a>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="container" style="
+            background-color: #eab676;
+            margin-top: 100px;
+            margin-bottom: 20px;
+          ">
+    <h1 class="mt-4 mb-3" style="text-align: center; padding: 50px 0px">
+      Create Blogs
+    </h1>
+
+    <div class="row" style="margin-left: 60px">
+      <div class="col-lg-11 mb-4">
+        <form name="sentMessage" id="contactForm" novalidate method="POST" action="">
+          {% csrf_token %}
+          <div class="control-group form-group">
+            <div class="controls">
+              <label><b>Full Name: </b></label>
+              <input type="text" class="form-control" id="blogger_fullname" name="blogger_fullname"
+                placeholder="Please enter your name." />
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label><b>Username:</b></label>
+              <input type="tel" class="form-control" id="blogger_username" name="blogger_username"
+                placeholder="Please enter your valid registered username." />
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label><b>Blog Topic: </b></label>
+              <input type="email" class="form-control" id="blog_name" name="blog_name" placeholder="Topic Name" />
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label><b>Content: </b></label>
+              <textarea rows="10" cols="100" class="form-control" id="content" name="content"
+                placeholder="Enter your content" maxlength="999" style="resize: none"></textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <footer style="
+            background-color: #3e3a45;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+          ">
+    <p style="
+              padding-top: 20px;
+              color: white;
+              padding-bottom: 20px;
+              font-size: 20px;
+              text-align: center;
+            ">
+      &copy; 2021: Kiran Maharana & Surajit Mondal
+    </p>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>

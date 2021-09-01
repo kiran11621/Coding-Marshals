@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/path/to/fontawesome/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <title>Choose Questions</title>
+    <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <style>
+
+    </style>
+</head>
+
+<body style="background-image: url('{% static 'images/d1.jpg' %}')">
+    <div class="navbar">
+        <a href="{% url 'indexlogin' %}"><b>Code Marshals</b></a>
+        <div style="float: right;">
+            <a href="{% url 'indexlogin' %}">Home</a>
+            <a href="{% url 'information' %}">How to use?</a>
+            <a href="{% url 'logout' %}">Logout</a>
+            <div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 col-sm-12 text-center">
+                <h1 style="text-shadow: 3px 2px black;">Questions List</h1>
+                <hr>
+            </div>
+        </div>
+        <div style="margin-right: 5%; margin-left:5%; margin-bottom: 5%;">
+            <div class="row">
+                <div class="col">
+                    <div class="card card-body">
+                        <form method="get">
+                            {{myFilter.form}}
+
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="card card-body">
+                        <h5>Questions</h5>
+                    </div>
+                    <div class="card card-body">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <table class="table">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Tags</th>
+                                    <th>Difficulty</th>
+                                </tr>
+
+                                {% for i in questions %}
+                                <tr>
+                                    <td>{{i.problem_name}}</td>
+                                    <td>{{i.tags}}</td>
+                                    <td>{{i.difficulty}}</td>
+                                    <td>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" name="items[]" class="form-check-input" value={{i.pk}}>
+                                            <label class="form-check-label"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                            <div>
+                                <button type="submit" class="btn btn-dark">Add To Contest</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

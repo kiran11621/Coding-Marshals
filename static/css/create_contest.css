@@ -1,0 +1,24 @@
+.form-container {
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 270px;
+            margin-right: 270px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+        }
+        .form-inside {
+            border-style: ridge;
+            margin: 50px;
+        }
+        .form-control1 {
+            width: 84%;
+            float: right;
+            padding: 8px;
+        }
+        .form-label1 {
+            width: 14%;
+        }
+        .size {
+            font-size: 40px;
+        }

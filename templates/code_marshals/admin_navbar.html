@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Navbar</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="{% static 'css_admin/admin_navbar.css'%}">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #3d65a6">
+        <a style="color:white;" class="navbar-brand" href="{% url 'index' %}">&nbsp;&nbsp;Code Marshals</font></a>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="{% url 'logout' %}">Logout &nbsp;&nbsp; <i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+<br><br>
+<div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><a style="text-decoration:none;" href="{% url 'admin_home' %}"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
+            <li>
+                <div id="accordion">
+                  <div>
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white;">
+                            <b>User Details</b>
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <a style="text-decoration:none;" href="{% url 'admin_user_view' %}"><i class="fas fa-user"></i>&nbsp;&nbsp;Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div id="accordion">
+                <div>
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: white;">
+                            <b>Questions</b>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                          <a style="text-decoration:none;" href="{% url 'admin_question_view' %}"><i class="fab fa-quora"></i>&nbsp;&nbsp;&nbsp;Details</a>
+                          <hr><a style="text-decoration:none;" href="{% url 'admin_add_question' %}"><i class="fab fa-quora"></i>&nbsp;&nbsp;&nbsp;Add</a>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div id="accordion">
+                  <div>
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
+                            <b>Contest</b>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                          <a style="text-decoration:none;" href="{% url 'admin_contest_view' %}"><i class="fas fa-cube"></i>&nbsp;&nbsp;&nbsp;Details</a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="main_content">
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

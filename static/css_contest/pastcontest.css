@@ -1,0 +1,14 @@
+.nli {
+    display: inline;
+    padding: 60px;
+    position: relative;
+}
+na {
+    color: black; font-size: 8px;
+}
+.na:hover {
+    background-color:  hsl(199, 76%, 84%);
+    padding: 10px;
+    border-radius: 25px;
+}
+

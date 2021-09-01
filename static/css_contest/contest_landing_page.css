@@ -1,0 +1,182 @@
+
+        table {
+          border-radius:4px;
+          width:70%;
+          background-color: white;
+          border-collapse: collapse;
+        }
+        tr {
+          border: 1px solid transparent;
+          z-index:7;
+        }
+        td {
+          text-align:center;
+          padding: 20px;
+          transition: all 0.2s ease-in-out;
+        }
+        td.highlight {
+          padding:0;
+          width:4px;
+        }
+        td.highlight div {
+          width:4px;
+          height:60px;
+          border-radius:4px;
+          background-color: white;
+          transition: all 0.2s ease-in-out;
+        }
+        tr:hover {
+         box-shadow: 0px 9px 4px -6px grey;
+        }
+        tr:hover td{
+          cursor:pointer;
+          color:red;
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+        }
+
+        /* tr:first-child:hover td {
+          border-top: none;
+        }
+        tr:last-child:hover td {
+          border-bottom: none;
+        } */
+
+
+        tr:hover td.highlight div {
+          transform: scaleX(3);
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.amp {
+  margin: 0 0 0.25em 0;
+}
+.amp span {
+  font-size: 0.7em;
+}
+
+.copy {
+  font: 1em Georgia, Serif;
+  text-align: justify;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+}
+.copy p {
+  margin: 0 0 1em 0;
+}
+
+/* creating two section*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* leaderboard */
+
+/* container */
+.container1 {
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* leaderboard */
+.leaderboard {
+	background: linear-gradient(to bottom, #3a404d, #181c26);
+}
+
+/* head */
+.leaderboard .head {
+	padding: 20px 16px;
+	color: snow;
+	font-size: 10px;
+	text-align: center;
+}
+.leaderboard .head h1 {
+	display: inline-block;
+}
+
+/* body */
+.leaderboard .body {
+	color: snow;
+	font-size: 16px;
+}
+.leaderboard ol {
+	counter-reset: number;
+}
+.leaderboard li {
+	padding: 16px;
+}
+.leaderboard li mark {
+	flex-grow: 1;
+	color: snow;
+	background-color: transparent;
+}
+.leaderboard li:before {
+	counter-increment: number;
+	content: counter(number) "."
+	margin-right: 4px;
+}
+.leaderboard li:nth-child(1) {
+	background: #64b1e8;
+}
+.leaderboard li:nth-child(2) {
+	background: #4ea6e4;
+}
+.leaderboard li:nth-child(3) {
+	background: #379ae1;
+}
+.leaderboard li:nth-child(4) {
+	background: #1e81c8;
+}
+.leaderboard li:nth-child(5) {
+	background: #1b73b1;
+}
+.body ol li small {
+    float: right;
+}
+
+
+
+/* button */

@@ -1,0 +1,61 @@
+{% block content %} {% load widget_tweaks %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+    <title>Verify PassCode</title>
+
+    <style></style>
+    <link
+      rel="stylesheet"
+      href="{% static 'css_contest/enter_passcode_page.css'%}"
+    />
+    <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="{% url 'indexlogin' %}"><b>Code Marshals</b></a>
+      <div style="float: right">
+        <a href="{% url 'indexlogin' %}">Home</a>
+        <a href="{% url 'logout' %}">Logout</a>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <form method="POST" class="box">
+              {% csrf_token %}
+              <h2>Enter passcode of contest</h2>
+              <input type="password" name="pass" placeholder="Passcode" />
+              <input type="submit" value="enter" />
+              <div class="card">
+                {% if messages %} {% for message in messages %}
+                <span class="failure">{{message}}</span>
+                {% endfor %} {% endif %}
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    {% endblock content %}
+  </body>
+</html>

@@ -1,0 +1,198 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem</title>
+<link rel="stylesheet" href="{% static 'css_contest/particular_question.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+</head>
+<body style="overflow-x: hidden; background-color: #ffe6cc" onload="autoheight('ta')">
+
+<section>
+    {% include 'users_contest_display/contest_navbar.html' %}
+</section>
+<section>
+    {% include 'users_contest_display/contest_navbar_top1.html' %}
+</section>
+
+<section style="margin-top: 120px;">
+    <div class="fancy amp" style="font-size: 50px; text-transform: uppercase; font-family: Times New Roman;"><span><b>{{cname}}</b></span></div>
+    <p style="color: black; text-align: center; margin-left: 200px; margin-right: 200px; font-family: Times New Roman, Times, serif;">{{description}}</p>
+</section>
+<section style="margin-top: -50px;">
+    <nav aria-label="breadcrumb" style="border-top: 0; margin-top: 50px; margin-left: 250px; margin-right: 200px;">
+      <ol class="breadcrumb" style="background-color: #041a2f; padding: 13px; border-radius: 3px;">
+        <li class="breadcrumb-item active" aria-current="page">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/users_contest_display/contest_landing_page/{{pk}}/{{cname}}/{{current_user}}" style="text-decoration: none; color: white;" >Problem Set >></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="text-decoration: none; color: white;">{{question.problem_name}} >></a></li>
+      </ol>
+    </nav>
+</section>
+<section style="margin-top: 0px; margin-left: 250px; margin-right: 350px;">
+    <section style="width: 80%; float: left;">
+        <div style="overflow-x: auto;">
+            <table style="width: 90%;">
+                <tr>
+                    <th style="white-space: pre;">{{question.problem_name}}</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea readonly contenteditable="true"; id="ta" onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.problem_statement}}</textarea></td>
+                </tr>
+            </table>
+            <hr style="width: 90%; margin-left: 0px;">
+            <table style="width: 90%;">
+                <tr>
+                    <th>Input</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.input_format}}</textarea></td>
+                </tr>
+            </table>
+            <hr style="width: 90%; margin-left: 0px;">
+            <table style="width: 90%; margin-left: 0px;">
+                <tr>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.output_format}}</textarea></td>
+                </tr>
+            </table>
+            <hr style="width: 90%; margin-left: 0px;">
+            <table style="width: 90%;">
+                <tr>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.constraints}}</textarea></td>
+                </tr>
+            </table>
+            <hr style="width: 90%; margin-left: 0px;">
+            <table style="width: 90%">
+                <tr>
+                    <th style="width: 49%">Example Input:</th>
+                    <th style="width: 1%"></th>
+                    <th style="width: 49%">Example Output:</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.sample_input}}</textarea></td>
+                    <td><hr width="1" size="100px"></td>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.sample_output}}</textarea></td>
+                </tr>
+            </table>
+            <hr style="width: 90%; margin-left: 0px;">
+            <table style="width: 90%; margin-bottom: 50px;">
+                <tr>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td style=""><textarea id="ta" readonly onkeyup="autoheight('ta')" class="texta" style="border: none; height: auto; width: 100%; overflow:hidden; resize: none;">{{question.explanation}}</textarea></td>
+                </tr>
+            </table>
+
+            <button encoding="UTF-8" type="submit" style="margin-left: 380px; background-color: coral; padding: 15px 55px; border-radius: 10px; margin-bottom: 30px; align-text: center; float: center;" onclick="document.location='/users_contest_display/submit/{{current_user}}/{{cname}}/{{pk}}/{{problem_name}}'">Submit</button>
+        </div>
+    </section>
+    <section style="width: 15%; float: right;">
+        <div class="row" style="margin-top: 70px;">
+
+          <div class="card text-white mb-3" style="width: 22rem;  border-radius: 25px;">
+              <div class="card-header" style="background-color: #ff944d; text-align: center; border-radius: 25px 25px 0px 0px; padding: 5px;"><h4><b>TIME REMAINING</b></h4></div>
+              <div class="card-body" style="color: black; background-color: white; padding: 5px; border-radius: 0 0 25px 25px;">
+                <p class="card-text" style="text-align: center; ">
+                    <ul type="none" style="display:flex;  list-style:none; text-align: center; font-size: 20px;">
+                  <li></li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><li id="days"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                   <b> <li id="hours"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                   <b> <li id="mins"></li>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                  <b><li id="secs"></li></b>
+                   </ul>
+                    <h2 id="end"></h2>
+                </p>
+            </div>
+          </div>
+            <br><Br><br>
+            <div class="card text-white mb-3" style="width: 22rem;  border-radius: 25px;">
+              <div class="card-header" style="background-color: #ff944d; text-align: center; border-radius: 25px 25px 0px 0px; padding: 5px;"><h4><b>TAGS</b></h4></div>
+              <div class="card-body" style="color: black; background-color: white; padding: 15px; border-radius: 0 0 25px 25px;">
+                <p class="card-text" style="text-align: center;"><h5 style="text-align: center; padding: 4px; text-align: center;">{{question.tags}}</h5></p>
+            </div>
+          </div>
+            <div>
+              <br><br>
+              <div class="card text-white mb-3" style="width: 22rem;  border-radius: 25px;">
+                <button type="button" class="btn btn-outline-info" style="width: 100%; height: 40px; border-color: orange; " onclick="document.location='/users_contest_display/leaderboard/{{cname}}/{{current_user}}'">LEADERBOARD</button>
+              </div>
+              </div>
+
+          <div class="container mb-3" style=" margin-left: 0px; width: 22rem;  border-radius: 25px;">
+              <br><br>
+            <div class="leaderboard" style="border-radius: 25px 25px 0 0;">
+                <div class="head">
+                    <i class="fa fa-fort-awesome" style="font-size:36px"></i>
+                    <h1>Leaderboard</h1>
+                </div>
+                <div class="body">
+                    <ol>
+                        {% for i in board %}
+                        <li>
+                            <mark>{{ i.uname }}</mark>
+                            <small>{{ i.final_points }}</small>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+    <script src="{% static '/js/date.js' %}" type="text/javascript"></script>
+
+<script>
+function autoheight(element) {
+var el = document.getElementById(element);
+    el.style.height = "5px";
+    el.style.height = (el.scrollHeight)+"px";
+}
+
+    var t = "{{date}} {{formatedtime}}";
+    console.log(t);
+    // The data/time we want to countdown to
+    var countDownDate = new Date(t).getTime();
+
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    console.log(timeleft)
+    document.getElementById(timeleft)
+
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+    // Result is output to the specific element
+    document.getElementById("days").innerHTML = days + "d "
+    document.getElementById("hours").innerHTML = hours + "h "
+    document.getElementById("mins").innerHTML = minutes + "m "
+    document.getElementById("secs").innerHTML = seconds + "s "
+
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = ""
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+        window.location.href = '/users_contest_display/leaderboard/{{cname}}/{{current_user}}';
+        document.getElementById("timeleft").innerHTML=""
+    }
+    }, 1000);
+
+</script>
+</body>
+
+</html>

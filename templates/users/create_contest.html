@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Contest</title>
+    <link rel="stylesheet" href="/path/to/fontawesome/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/create_contest.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contest_navbar.css'%}">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+</head>
+
+<body style="background-image: url('{% static 'images/a2.png' %}') ">
+
+    <div class="navbar">
+        <a href="{% url 'indexlogin' %}"><b>Code Marshals</b></a>
+        <div style="float: right;">
+            <a href="{% url 'indexlogin' %}">Home</a>
+            <a href="{% url 'information' %}">How to use?</a>
+            <a href="{% url 'logout' %}">Logout</a>
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <SECTION class="form-container" style="background-color:  #FFC300">
+        <div class="container mb-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 col-sm-12 text-center">
+                    <br>
+                    <h1 style="color: white; ">Contest Information</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-1">
+                <div class="col-md-12 col-sm-12 p-4">
+                    <form method="POST" action="" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <div class="form-group pt-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"><b>Contest Name</b></label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="cname" placeholder="Give a Unique Name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"><b>Username</b></label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" name="username" placeholder="Enter your registered Username" required>
+                            </div>
+
+                            <label for="birthday"><b>Choose a date for Organizing Contest:</b></label>
+                            <input type="date" id="birthday" name="date" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br>
+                            <br>
+                            <label for=""><b>Choose Contest Start time:</b></label>
+
+                            <input type="time" id="appt" name="starttime" min="00:00" max="24:00" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for=""><b>Choose a Contest End time:</b></label>
+
+                            <input type="time" id="appt" name="endtime" min="00:00" max="24:00" required>
+                            <br>
+                            <br>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"><b>Description</b></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" placeholder="Short Summary of about Contest | Required" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"><b>Rules</b></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="rules" placeholder="If Not Applicable Type None" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"><b>Prizes</b></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="prizes" placeholder="If Not Applicable Type None" required></textarea>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#submitModal">
+                        Save changes
+                    </button>
+                </div>
+                {% if messages %}
+                <ul class="messages" type="none">
+                    {% for message in messages %}
+                    <p><b><li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li></b></p>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                </form>
+            </div>
+        </div>
+        <br>
+    </SECTION>
+
+    <footer style="background-color: #3e3a45;position:absolute; width:100%;  min-height: 8vh; ">
+        <p style="padding-top: 20px; color: white; padding-bottom: 20px; font-size: 20px; text-align: center;">&copy; 2021: Kiran Maharana & Surajit Mondal</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

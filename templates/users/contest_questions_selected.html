@@ -1,0 +1,52 @@
+{% load widget_tweaks %} {%load static%}
+
+<html>
+  <head>
+    <title>Choose Questions</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/contest_questions_selected.css'%}"
+    />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <style></style>
+  </head>
+  <body>
+    <section>{% include "users/navbar_contest.html" %}</section>
+    <section style="margin-top: 70px">
+      <h1 style="text-align: center">{{name}}</h1>
+      <h5 style="text-align: center">
+        <b>Contest Creator: </b><i>{{uname}}</i>
+      </h5>
+      <h5 style="text-align: center">
+        <b>Contest Passcode: </b><i style="color: blue">{{passcode}}</i>
+      </h5>
+      <h6 style="text-align: center">
+        Share passcode with your friends to enter the contest
+      </h6>
+    </section>
+    <div id="container">
+      <div
+        class="div1"
+        style="background-image: url('{% static 'images/b1.jpg' %}')"
+      >
+        <button
+          class="btn-grad vertical-center"
+          onclick="document.location='/users/question_list/{{uname}}/{{prim_key}}'"
+        >
+          Click to use the already prepared Questions
+        </button>
+      </div>
+      <div
+        class="div2"
+        style="background-image: url('{% static 'images/b2.jpg' %}')"
+      >
+        <button
+          class="btn-grad1 vertical-center"
+          onclick="document.location='/users/Questionmake/{{uname}}/{{prim_key}}'"
+        >
+          Click to Create your own Questions for Contest
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+{% block content %} {% load widget_tweaks %} {%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+  </head>
+  <body style="background-color: #d6e6ff">
+    <section>{% include 'code_marshals/admin_navbar.html' %}</section>
+
+    <div class="container" style="float: center; margin-top: 50px; width: 100%">
+      <h4 class="text-center">User Details</h4>
+      <br />
+      <table class="table table-light table-hover table-bordered table-striped">
+        <thead class="bg-info">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Profile</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Address</th>
+            <th scope="col">Institute</th>
+            <th scope="col">Mobile</th>
+            <th class="text-right">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for t in users %}
+          <tr>
+            <td>{{t.get_name}}</td>
+            <td>
+              <img
+                src="/media/{{t.profile_pic}}"
+                alt="Profile Pic"
+                height="40px"
+                width="40px"
+              />
+            </td>
+            <td>{{t.gender}}</td>
+            <td>{{t.country}} {{t.city}}</td>
+            <td>{{t.college}}</td>
+            <td>{{t.mobile}}</td>
+
+            <td class="text-right">
+              <button class="btn btn-primary badge-pill" style="width: 80px">
+                <a
+                  style="text-decoration: none; color: white"
+                  href="{% url 'update_user_details' t.id  %}"
+                  >EDIT</a
+                >
+              </button>
+              <button class="btn btn-danger badge-pill" style="width: 80px">
+                <a
+                  style="text-decoration: none; color: white"
+                  href="{% url 'delete_user_details' t.id  %}"
+                  >DELETE</a
+                >
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+{% endblock content %}

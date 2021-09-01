@@ -1,0 +1,46 @@
+Problem Statement 
+
+Very soon a Website named "Code Marshals" was to be launched.The Software Development team of "Code Marshals" 
+wants to create a Registration system for the users.They dont want that any users signing up in their website is prompted 
+with a result that username already exist.So to solve this issue they came up with a logic/solution which is explained as follows:-
+
+Whenever a new users visits the website and tries to sign up/register they will be asked for two things username and password.
+Once they fill following input fields and submit the form.If the username entered by the user does not exist in the database of 
+"Code Marshals" they will be prompted Done! else if the username already exist in the database their username will be appended by the 
+count of numbers of times that username is previously requested and will be prompted to the user.
+
+The software development team wants you to provide a coding solution for the above solution decided.
+
+Input Format:
+
+The first line will contain 'n' the number of users signed up
+Next 'n' lines contains the username provided by users (lowercase english letters).
+
+Output Format:
+
+The output will contain 'n' lines each containing either Done! 
+                        OR
+(username appended with a count) as explained in the problem statement 
+
+Constraints:
+
+1 <= n <= 10^5
+2 <= len(username) <=20
+
+Sample Input 1:
+
+5
+surajit
+kiran
+harsh
+sanjay
+harsh
+
+Sample Output 1:
+
+Done!
+Done!
+Done!
+Done!
+harsh1
+
