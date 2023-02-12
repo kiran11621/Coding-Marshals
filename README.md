@@ -46,7 +46,7 @@
 <br/>:black_small_square:&nbsp;Website provides features to Admin for administrating the website such as User details view and delete, Question adding and deleting, viewing Contest organized.
 <br/>:black_small_square:&nbsp;User will be mailed after registering, creating contest (containing Passcode) and filling the contact form. 
 <br/>:black_small_square:&nbsp;Features like Writing Blogs, Contact us, User Authentication, Update User details are provided.
-<br/>:black_small_square:&nbsp;We can create groups consisting of number of participants and can take part in the contest as a team.
+<br/>:black_small_square:&nbsp;We can create groups consisting of number of participants and can take part in the contest as a team.:https://dissenttimes.com/design-principles-of-interaction-design/
 </p>
 
 <h3>Outcomes - </h3>
